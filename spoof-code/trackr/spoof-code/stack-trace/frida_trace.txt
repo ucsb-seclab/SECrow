@@ -1,0 +1,186 @@
+[*] Running Trackr
+
+
+
+
+---------------------
+[*] sendRequest(http, JSONObject) is called: com.android.okhttp.internal.huc.HttpURLConnectionImpl:https://platform.thetrackr.com/rest/tracker/radius
+
+
+Contents are: {"searchLocation":{"latitude":34.4137417,"longitude":-119.8415699}}
+call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(Native Method)
+3	com.phonehalo.itemtracker.crowd.CrowdClient.getTrackersInRadius(CrowdClient.java:1047)
+4	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:36)
+5	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:16)
+6	android.os.AsyncTask$3.call(AsyncTask.java:378)
+7	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+8	android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+9	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11	java.lang.Thread.run(Thread.java:919)
+
+
+
+
+
+---------------------
+[*] write is called:
+General Trackr Info:{"searchLocation":{"latitude":34.4137417,"longitude":-119.8415699}}, arg 2:0, arg 3:67
+Retval: undefined
+General Trackr Info:{"searchLocation":{"latitude":34.4137417,"longitude":-119.8415699}}, arg 2:0, arg 3:67, call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	java.io.BufferedWriter.write(Native Method)
+3	java.io.Writer.write(Writer.java:157)
+4	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(CrowdClient.java:2029)
+5	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(Native Method)
+6	com.phonehalo.itemtracker.crowd.CrowdClient.getTrackersInRadius(CrowdClient.java:1047)
+7	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:36)
+8	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:16)
+9	android.os.AsyncTask$3.call(AsyncTask.java:378)
+10	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11	android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+12	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+13	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+14	java.lang.Thread.run(Thread.java:919)
+
+Retval: undefined
+---------------------
+
+
+
+
+
+
+
+
+---------------------
+[*] write is called:
+Original stuff:[{"trackerId":"000092c1-3d0d1eef","battery":55,"lastKnownLocation":{"latitude":34.4137417,"longitude":-119.8415699,"accuracy":17.304000854492188},"connected":true,"clientTimeDiff":52857,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"},{"trackerId":"0000e443-2d6e1bda","battery":-1,"lastKnownLocation":{"latitude":34.4137339,"longitude":-119.8415627,"accuracy":17.264999389648438},"connected":false,"clientTimeDiff":42803,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"},{"trackerId":"00007151-69611bf3","battery":43,"lastKnownLocation":{"latitude":34.4137338,"longitude":-119.8415616,"accuracy":17.381999969482422},"connected":true,"clientTimeDiff":10,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"}]
+Sending third party trackr info:[{"trackerId":"000092c1-3d0d1eef","battery":55,"lastKnownLocation":{"latitude":30.7749,"longitude":-101.8415702,"accuracy":17.304000854492188},"connected":true,"clientTimeDiff":52857,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"},{"trackerId":"0000e443-2d6e1bda","battery":-1,"lastKnownLocation":{"latitude":30.7749,"longitude":-101.8415702,"accuracy":17.264999389648438},"connected":false,"clientTimeDiff":42803,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"},{"trackerId":"00007151-69611bf3","battery":43,"lastKnownLocation":{"latitude":30.7749,"longitude":-101.8415702,"accuracy":17.381999969482422},"connected":true,"clientTimeDiff":10,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"}]
+Retval: undefined
+General Trackr Info:[{"trackerId":"000092c1-3d0d1eef","battery":55,"lastKnownLocation":{"latitude":30.7749,"longitude":-101.8415702,"accuracy":17.304000854492188},"connected":true,"clientTimeDiff":52857,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"},{"trackerId":"0000e443-2d6e1bda","battery":-1,"lastKnownLocation":{"latitude":30.7749,"longitude":-101.8415702,"accuracy":17.264999389648438},"connected":false,"clientTimeDiff":42803,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"},{"trackerId":"00007151-69611bf3","battery":43,"lastKnownLocation":{"latitude":30.7749,"longitude":-101.8415702,"accuracy":17.381999969482422},"connected":true,"clientTimeDiff":10,"pushNotToken":"fKWo6JUyf5E:APA91bFJi6LBR4_QgNL539FAlrgQe_2iFrCzdV9qI6QEIuMTBzaPbGn2ECXJlf9kAeNcNJT2z6C8pskGrOtlGItQuSpL-Q2n7_ps74RowZ6_aYlrmERpe3XRmTmouRADae0yLEadC2bL"}], arg 2:0, arg 3:1058, call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	java.io.BufferedWriter.write(Native Method)
+3	java.io.Writer.write(Writer.java:157)
+4	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(CrowdClient.java:2094)
+5	com.phonehalo.itemtracker.crowd.CrowdClient.updateBatchTrackersWithSharedSecret(CrowdClient.java:984)
+6	com.phonehalo.itemtracker.provider.PhSyncAdapter.updateTrackersWithRequestLimit(PhSyncAdapter.java:439)
+7	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushUnsyncedTrackrDataBatch(PhSyncAdapter.java:426)
+8	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushLocalTrackrsToRemote(PhSyncAdapter.java:365)
+9	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushLocalItemsAndTrackrsToRemote(PhSyncAdapter.java:302)
+10	com.phonehalo.itemtracker.provider.PhSyncAdapter.handleNonAnonymousAccountSync(PhSyncAdapter.java:255)
+11	com.phonehalo.itemtracker.provider.PhSyncAdapter.onPerformSync(PhSyncAdapter.java:222)
+12	android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:334)
+
+Retval: undefined
+---------------------
+
+
+
+
+
+
+
+
+---------------------
+[*] sendRequest(http, JSONObject) is called: com.android.okhttp.internal.huc.HttpURLConnectionImpl:https://platform.thetrackr.com/rest/item?usertoken=%242a%2410%24Q.bp%2Funj5X3BOU583scI5OoBAfxSf6TjhcRsI4MR5Q6OyjENPYGFa
+
+
+Contents are: {"customName":"two","type":"Bluetooth","trackerId":"00007151-69611bf3","icon":"trackr","timeElapsedSync":957}
+call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(Native Method)
+3	com.phonehalo.itemtracker.crowd.CrowdClient.createItemWithTracker(CrowdClient.java:1104)
+4	com.phonehalo.itemtracker.provider.PhSyncAdapter.createItemForTracker(PhSyncAdapter.java:1156)
+5	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushLocalNewItemsToRemote(PhSyncAdapter.java:1003)
+6	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushLocalItemsAndTrackrsToRemote(PhSyncAdapter.java:304)
+7	com.phonehalo.itemtracker.provider.PhSyncAdapter.handleNonAnonymousAccountSync(PhSyncAdapter.java:255)
+8	com.phonehalo.itemtracker.provider.PhSyncAdapter.onPerformSync(PhSyncAdapter.java:222)
+9	android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:334)
+
+
+
+
+
+---------------------
+[*] write is called:
+General Trackr Info:{"customName":"two","type":"Bluetooth","trackerId":"00007151-69611bf3","icon":"trackr","timeElapsedSync":957}, arg 2:0, arg 3:109
+Retval: undefined
+General Trackr Info:{"customName":"two","type":"Bluetooth","trackerId":"00007151-69611bf3","icon":"trackr","timeElapsedSync":957}, arg 2:0, arg 3:109, call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	java.io.BufferedWriter.write(Native Method)
+3	java.io.Writer.write(Writer.java:157)
+4	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(CrowdClient.java:2029)
+5	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(Native Method)
+6	com.phonehalo.itemtracker.crowd.CrowdClient.createItemWithTracker(CrowdClient.java:1104)
+7	com.phonehalo.itemtracker.provider.PhSyncAdapter.createItemForTracker(PhSyncAdapter.java:1156)
+8	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushLocalNewItemsToRemote(PhSyncAdapter.java:1003)
+9	com.phonehalo.itemtracker.provider.PhSyncAdapter.pushLocalItemsAndTrackrsToRemote(PhSyncAdapter.java:304)
+10	com.phonehalo.itemtracker.provider.PhSyncAdapter.handleNonAnonymousAccountSync(PhSyncAdapter.java:255)
+11	com.phonehalo.itemtracker.provider.PhSyncAdapter.onPerformSync(PhSyncAdapter.java:222)
+12	android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:334)
+
+Retval: undefined
+---------------------
+
+
+
+
+
+
+
+
+---------------------
+[*] sendRequest(http, JSONObject) is called: com.android.okhttp.internal.huc.HttpURLConnectionImpl:https://platform.thetrackr.com/rest/tracker/radius
+
+
+Contents are: {"searchLocation":{"latitude":34.4137417,"longitude":-119.8415699}}
+call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(Native Method)
+3	com.phonehalo.itemtracker.crowd.CrowdClient.getTrackersInRadius(CrowdClient.java:1047)
+4	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:36)
+5	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:16)
+6	android.os.AsyncTask$3.call(AsyncTask.java:378)
+7	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+8	android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+9	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11	java.lang.Thread.run(Thread.java:919)
+
+
+
+
+
+---------------------
+[*] write is called:
+General Trackr Info:{"searchLocation":{"latitude":34.4137417,"longitude":-119.8415699}}, arg 2:0, arg 3:67
+Retval: undefined
+General Trackr Info:{"searchLocation":{"latitude":34.4137417,"longitude":-119.8415699}}, arg 2:0, arg 3:67, call stack:
+0	dalvik.system.VMStack.getThreadStackTrace(Native Method)
+1	java.lang.Thread.getStackTrace(Thread.java:1720)
+2	java.io.BufferedWriter.write(Native Method)
+3	java.io.Writer.write(Writer.java:157)
+4	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(CrowdClient.java:2029)
+5	com.phonehalo.itemtracker.crowd.CrowdClient.sendRequest(Native Method)
+6	com.phonehalo.itemtracker.crowd.CrowdClient.getTrackersInRadius(CrowdClient.java:1047)
+7	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:36)
+8	com.phonehalo.itemtracker.activity.home.GetUsersNearbyTask.doInBackground(GetUsersNearbyTask.java:16)
+9	android.os.AsyncTask$3.call(AsyncTask.java:378)
+10	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11	android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+12	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+13	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+14	java.lang.Thread.run(Thread.java:919)
+
+Retval: undefined
+---------------------
+

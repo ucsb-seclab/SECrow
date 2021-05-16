@@ -1,0 +1,11 @@
+TD:
+
+Total Bytes:
+        Sent: 588
+        Recv: 1973
+
+CD:
+
+Total Bytes:
+        Sent: 2688
+        Recv: 1263
