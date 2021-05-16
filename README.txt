@@ -8,6 +8,12 @@ Packages/Libraries Needded: [Look for specific instructions below]
 
 # Instructions
 
+Run all code as standard python3 files by using
+
+```
+python3 file.py
+```
+
 ## Required for replicating SECROW sample implementation
 - Raspberry Pi 3 (for all SECROW implementation Code -- TD code)
 
