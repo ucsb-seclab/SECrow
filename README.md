@@ -4,7 +4,7 @@ _______
 ## Source code info
 Repository: https://github.com/ucsb-seclab/SECrow
 Programming Languages: Python/Java/JavaScript/Bytecode 
-Packages/Libraries Needded: [Look for specific instructions below]
+Packages/Libraries Needed: [Look for specific instructions below]
 
 
 ## Instructions
@@ -35,12 +35,12 @@ python3 file.py
     	* no-encrypt -- above implementation but without any encryption
     	* time-testing -- contains code for running a time test on implementation
     
-    For Table 4:
+    * For Table 4:
     	* Run code for time testing encryption
-    For Table 5:
+    * For Table 5:
     	* Run non-encryption code for baseline
     	* Run encryption code for SECROW
-    For Table 6:
+    * For Table 6:
     	* Use the USB power meter as mentioned above in devices to measure power requirements on TD
 
 ### Required for replicating spoof code
