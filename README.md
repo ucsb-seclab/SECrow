@@ -2,9 +2,9 @@
 _______
 
 ## Source code info
-Repository: https://github.com/ucsb-seclab/SECrow
-Programming Languages: Python/Java/JavaScript/Bytecode 
-Packages/Libraries Needed: [Look for specific instructions below]
+* Repository: https://github.com/ucsb-seclab/SECrow
+* Programming Languages: Python/Java/JavaScript/Bytecode 
+* Packages/Libraries Needed: [Look for specific instructions below]
 
 
 ## Instructions
