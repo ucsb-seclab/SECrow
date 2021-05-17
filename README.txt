@@ -1,4 +1,4 @@
-Readme for reproducibility submission of paper ID 64
+# Readme for reproducibility submission of paper ID 64
 
 ## Source code info
 * Repository: https://github.com/ucsb-seclab/SECrow
@@ -52,20 +52,20 @@ For Table 5:
 For Table 6:
 	* Use the USB power meter as mentioned above in devices to measure power requirements on TD
 
-### How to run:
+### Assume that you have Raspberry PI and our VM : How to run
 (.venv) osboxes@osboxes:~/Desktop/sample-implementation/adding-owner$ python3 ts.py 
 TD Public key loaded.
 TD Private key loaded.
 CD Public key loaded.
 
 -- Run CD:
-
+```
 python3 cd.py
-
+```
 -- Run TD: (on raspi)
-
+```
 python3 td.py
-
+```
 
 
 ### Required for replicating spoof code
