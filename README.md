@@ -1,5 +1,4 @@
 # Readme for reproducibility submission of paper ID 64
-_______
 
 ## Source code info
 * Repository: https://github.com/ucsb-seclab/SECrow
@@ -53,24 +52,56 @@ For Table 5:
 For Table 6:
 	* Use the USB power meter as mentioned above in devices to measure power requirements on TD
 
-### How to run:
--- Run TS:
+### Assume that you have Raspberry PI and our VM : How to run
+
+**Adding Owner**
+
 ```
-(.venv) osboxes@osboxes:~/Desktop/sample-implementation/adding-owner$ python3 ts.py 
+(.venv) chinmaygarg@Chinmays-MacBook-Pro adding-owner % python3 ts.py
 TD Public key loaded.
 TD Private key loaded.
 CD Public key loaded.
 ```
 
--- Run CD:
 ```
-python3 cd.py
+chinmaygarg@Chinmays-MacBook-Pro adding-owner % python3 cd.py
+2021-05-17 21:53:43.223 Python[19683:512863] instantiateOnDevice for regular
+TD Public key loaded.
+CD Public key loaded.
+Private key loaded.
+c
+Total time: 7.977100849151611
 ```
 
--- Run TD: (on raspi)
+*(Note: press any key to initiate adding owner)*
+
 ```
-python3 td.py
+09:53:37 (.venv) pi@127 adding-owner ±|master ✗|→ python3 td.py
+Public key loaded.
+Private key loaded.
+Total time in TD: 7.709195137023926
 ```
+
+**Location Key**
+
+```
+09:55:53 (.venv) pi@127 location-key ±|master ✗|→ python3 td.py
+Public key loaded.
+Public key loaded.
+Private key loaded.
+Total time: 8.059860467910767
+```
+
+```
+chinmaygarg@Chinmays-MacBook-Pro location-key % python3 cd.py
+2021-05-17 21:56:27.157 Python[19785:514586] instantiateOnDevice for regular
+TD Public key loaded.
+CD Public key loaded.
+Private key loaded.
+c
+Total time: 8.348144292831421
+```
+*(Note: press any key to initiate adding owner)*
 
 
 ### Required for replicating spoof code
@@ -87,6 +118,3 @@ python3 td.py
 - To recreate please install the non-obfuscated APKs (without -objection.apk) and run the python files. 
 - Each device has a set of different ways to test different properties and sample files from our tests have been preserved to the best of ability.
 - It is important to install the APKs found within  these folders as the new Google Play Store version may contain updates preventing these attacks. It is also possible some attacks may have been blocked as a result of responsible disclosure by the manufacturer from server-side. 
-
-
-
