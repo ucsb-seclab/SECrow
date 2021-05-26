@@ -16,7 +16,7 @@ python3 file.py
 
 ### Required for replicating SECROW sample implementation
 - Raspberry Pi 3 (for all SECROW implementation Code -- TD code)
-- USB Powermeter (https://smile.amazon.com/Tester-Eversame-Voltmeter-Ammeter-Braided/dp/B07MGQZHGM/ref=pd_ybh_a_2?_encoding=UTF8&psc=1&refRID=6PWGZYVE6AMYY87X5TS8)
+- USB Powermeter [Link](https://smile.amazon.com/Tester-Eversame-Voltmeter-Ammeter-Braided/dp/B07MGQZHGM/ref=pd_ybh_a_2?_encoding=UTF8&psc=1&refRID=6PWGZYVE6AMYY87X5TS8)
 
 ### Sample Implementation
 - All code for SecROW sample implementation can be found within the `sample-implementation` folder. 
@@ -31,8 +31,15 @@ python3 file.py
 - Install requirements from `sample-implementation/requirements.txt` by using command `pip3 install -r requirements.txt` from within the venv
 - If missing: install bluetooth bindings using `sudo apt-get install bluetooth` and `sudo apt-get install pybluez`
 - Once everything is installed, find the Bluetooth Address using `hciconfig`
-- Replace this address within the `sample-implementation` python files listed below prior to running them
+- Replace this address within the `sample-implementation` python files listed below prior to running them. Within the code the location to change this address is within the paramater `serverAddress`.
 
+**Alternative to above instructions for Raspberry Pi**
+If you have issues setting up the Raspberry Pi, you can download our working copy of RaspbianOS that contains all the code required for running the SECrow code. You can download this image [here](https://drive.google.com/file/d/1-Oivi3WmQ-9zbxQEWXYzbTLC94_ZG4pO/view?usp=sharing).
+
+- You can use this image and flash it on the SD Card used within your RaspberryPi. 
+- Once the Pi is operational, you can find all needed code files within `~/Documents/`
+
+### Code Heirarchy 
 
 Here are the different folders containing code for the following 
 
